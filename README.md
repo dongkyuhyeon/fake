@@ -29,3 +29,10 @@ Large binary files are intentionally not tracked by Git:
 - `submit.zip`
 
 Download the official [`open.zip`](https://cfiles.dacon.co.kr/competitions/236749/open.zip) and extract `baseline_submit.zip` to obtain the exact weights and submission package. The expected weight hashes are recorded in `baseline/model/SHA256SUMS.txt`.
+
+The locally verified submission archive is kept outside Git at:
+
+```text
+/workspace/dacon_236749/codeshare_14153/submit.zip
+```
+

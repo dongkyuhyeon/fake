@@ -1,0 +1,26 @@
+# Large model weights
+*.bin
+*.pth
+*.pt
+*.th
+*.ckpt
+*.safetensors
+
+# Submission archives and downloaded competition bundles
+submit.zip
+baseline_submit.zip
+open.zip
+
+# Generated evaluation files
+data/
+output/
+
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+
