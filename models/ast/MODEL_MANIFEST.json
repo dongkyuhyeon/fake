@@ -1,0 +1,11 @@
+{
+  "model_id": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "revision": "f826b80d28226b62986cc218e5cec390b1096902",
+  "task": "audio-classification",
+  "weights_file": "model.safetensors",
+  "weights_sha256": "ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d",
+  "weights_size_bytes": 346404948,
+  "parameters": 86594063,
+  "license": "bsd-3-clause",
+  "local_directory": "/workspace/model_artifacts/ast"
+}
