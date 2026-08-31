@@ -1,0 +1,11 @@
+{
+  "model_name": "BEATs_iter3+ (AS2M)",
+  "checkpoint_type": "pretrained",
+  "upstream_repository": "https://github.com/microsoft/unilm",
+  "upstream_commit": "ca43e4cd19445a536f133bf2bc25b573b2f0c7c5",
+  "upstream_directory": "beats",
+  "official_checkpoint_url": "https://1drv.ms/u/s!AqeByhGUtINrgcpke6_lRSZEKD5j2Q?e=A3FpOf",
+  "expected_checkpoint_path": "/workspace/model_artifacts/beats/BEATs_iter3_plus_AS2M.pt",
+  "sha256": null,
+  "license": "MIT"
+}
