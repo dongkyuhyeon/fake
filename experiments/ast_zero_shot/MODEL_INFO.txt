@@ -1,0 +1,14 @@
+MIT AST AudioSet
+- Source: MIT/ast-finetuned-audioset-10-10-0.4593
+- Revision: f826b80d28226b62986cc218e5cec390b1096902
+- License: BSD-3-Clause
+- Local directory: ast
+
+DF-Arena 1B
+- Source: Speech-Arena-2025/DF_Arena_1B_V_1
+- Revision: fb6ce85de12c2c5a509d89114adaf827dd75f49f
+- Local directory: df_arena_1b
+
+HTDemucs
+- Model: htdemucs (955717e8-8726e21a)
+- Local directory: htdemucs
