@@ -1,3 +1,1 @@
-matplotlib==3.9.2
-safetensors==0.4.5
-transformers==4.40.2
+# The evaluation image already provides every runtime dependency.

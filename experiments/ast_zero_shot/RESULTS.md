@@ -23,8 +23,8 @@
 ## Submission artifact
 
 - File: `submit_ast_v1.zip`
-- Compressed size: `4,580,604,555 bytes`
-- Uncompressed size: `5,022,413,769 bytes`
-- SHA-256: `300bf9b31906a470608df801004ed01c8c4a91857eb13691f9e04c053dc4fad4`
+- Compressed size: `4,580,604,158 bytes`
+- Uncompressed size: `5,022,413,777 bytes`
+- SHA-256: `480486260fcff15ea731336d579d5e0fa56e8a964f540b51a4aefe7025877602`
 
 리더보드 점수는 실제 제출 후 기록한다.
