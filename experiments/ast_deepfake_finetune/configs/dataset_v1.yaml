@@ -1,0 +1,46 @@
+version: 1
+seed: 236749
+audio:
+  sample_rate: 16000
+  channels: 1
+  clip_seconds: 10
+  peak_limit: 0.999
+
+target_examples:
+  core_combinations: 80000
+  partial_fake: 10000
+  hard_negative: 10000
+
+language_ratio:
+  ko: 0.60
+  en: 0.40
+
+mixing:
+  voice_to_music_gain_db: [-12, 12]
+  partial_fake_seconds: [0.5, 3.0]
+  random_onset: true
+
+channels:
+  clean: 0.40
+  lossy_codec: 0.30
+  telephone: 0.15
+  noise_reverb_resample: 0.15
+
+generators:
+  speech_train: [melotts, openvoice_v2]
+  speech_holdout: [bark]
+  music_train: [musicgen, audioldm2]
+  music_holdout: [stable_audio_open]
+
+split_policy:
+  ratios: [0.70, 0.15, 0.15]
+  group_keys: [source_file_id, speaker_id, artist_id, track_id]
+  generator_disjoint: true
+
+quality_gates:
+  reject_silence: true
+  reject_clipping: true
+  reject_duplicate_sha256: true
+  require_license_review: approved
+  manual_presence_audit_per_class_split: 50
+
