@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "experiment_id": "specialist_pipeline_v3",
+  "status": "EXTERNAL_VALIDATION_COMPLETE_OFFICIAL_RESULT_NOT_REPORTED",
+  "previous_submission_context": {
+    "baseline": {
+      "total": 0.69091,
+      "ads": 0.65775,
+      "cps": 0.98932
+    },
+    "second_model": {
+      "total": 0.69647,
+      "ads": 0.66603,
+      "cps": 0.97034
+    },
+    "note": "These are prior results and are not the official score of specialist_pipeline_v3."
+  },
+  "external_voice_validation": {
+    "dataset": "ShiftySpeech AISHELL",
+    "real_source": "AISHELL",
+    "fake_generator": "APNet2",
+    "paired_utterance_ids": true,
+    "real_count": 200,
+    "fake_count": 200,
+    "total_count": 400,
+    "variants": {
+      "original_ssl_aasist": {
+        "eer": 0.1225,
+        "roc_auc": 0.94834,
+        "processing_errors": 0
+      },
+      "htdemucs_vocals": {
+        "eer": 0.125,
+        "roc_auc": 0.9295,
+        "processing_errors": 0
+      },
+      "transformers_submission_conversion": {
+        "eer": 0.12,
+        "roc_auc": 0.94904,
+        "processing_errors": 0
+      }
+    },
+    "conversion_score_correlation": 0.999956
+  },
+  "format_validation": {
+    "wav": "PASS",
+    "mp3": "PASS_AFTER_DECODER_FALLBACK_FIX",
+    "flac": "PASS",
+    "decoder_order": ["torchaudio", "librosa_fallback"]
+  },
+  "official_dacon_result": {
+    "total": null,
+    "ads": null,
+    "cps": null,
+    "file_eer": null,
+    "voice_eer": null,
+    "music_eer": null,
+    "status": "NOT_REPORTED"
+  }
+}

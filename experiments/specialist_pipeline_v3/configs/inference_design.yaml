@@ -1,0 +1,43 @@
+experiment_id: specialist_pipeline_v3
+training_mode: frozen_inference
+additional_training: false
+fine_tuning: false
+
+outputs:
+  FILE_FAKE_PROB:
+    model: DF-Arena 1B
+    input: original_audio
+  VOICE_FAKE_PROB:
+    model: SSL-AASIST Transformers conversion
+    input: original_audio_or_conditional_vocals
+  MUSIC_FAKE_PROB:
+    model: DF-Arena 1B
+    input: original_audio_or_conditional_accompaniment
+  VOICE_PRESENT_PROB:
+    model: PANNs
+    input: original_audio
+  MUSIC_PRESENT_PROB:
+    model: PANNs
+    input: original_audio
+
+routing:
+  gate: MUSIC_PRESENT_PROB
+  threshold: 0.5
+  below_threshold:
+    use_htdemucs: false
+    voice_fake_input: original_audio
+    music_fake_input: original_audio
+  at_or_above_threshold:
+    use_htdemucs: true
+    voice_fake_input: vocals
+    music_fake_input: accompaniment
+
+file_formats:
+  - wav
+  - mp3
+  - flac
+decoder_order:
+  - torchaudio
+  - librosa_fallback
+
+official_result_status: NOT_REPORTED

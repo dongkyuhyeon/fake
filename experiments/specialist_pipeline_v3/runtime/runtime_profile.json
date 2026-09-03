@@ -1,0 +1,19 @@
+{
+  "measurement_device": "NVIDIA RTX A5000 GPU 0",
+  "audio_duration_seconds": 60,
+  "processing_seconds": 1.01,
+  "all_model_load_seconds": 21.27,
+  "peak_gpu_memory_gb": 6.88,
+  "competition_gpu": "NVIDIA L4",
+  "competition_gpu_vram_gib": 22.4,
+  "reported_worst_case": {
+    "files": 1200,
+    "condition": "all files are 60-second mixed audio and require HTDemucs",
+    "estimated_total": "approximately 60 minutes",
+    "status": "RUNTIME_RISK_NOT_MEASURED_ON_L4"
+  },
+  "notes": [
+    "Values are transcribed from the provided experiment screenshots.",
+    "No L4 end-to-end benchmark result was provided."
+  ]
+}

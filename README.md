@@ -27,6 +27,15 @@ Input audio (16 kHz mono)
 
 모델 준비 방법과 고정된 revision은 [`models/ast`](models/ast)에 기록한다.
 
+## Experiment reports
+
+전체 실험 목록과 현재 상태는 [`experiments/README.md`](experiments/README.md)에서 확인할 수 있다.
+
+- [`AST zero-shot`](experiments/ast_zero_shot)
+- [`AST deepfake-domain fine-tuning plan`](experiments/ast_deepfake_finetune)
+- [`Tiger A — AI-Music AST`](experiments/tiger_a_ai_music_ast)
+- [`Specialist Pipeline v3`](experiments/specialist_pipeline_v3)
+
 ## Experiment stages
 
 1. AST 가중치와 오프라인 로딩 검증
